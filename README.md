@@ -106,3 +106,37 @@ This basic model can detect 3 intents: `book`, `cancel`, and `weather`. To impro
 - Add more intents.
 
 
+
+
+
+
+
+
+
+# Student Pass/Fail Prediction
+
+## What it does:
+Checks whether a student will pass or fail based on how many hours they studied.
+
+## Tools Used:
+- **LogisticRegression**: A machine learning model used to predict binary outcomes (pass/fail).
+- **train_test_split**: Splits the data into two parts — training data to teach the model, and testing data to check accuracy.
+- **accuracy_score**: Measures how accurately the model predicts the results.
+
+## Steps:
+
+1. Collect data for study hours and corresponding pass/fail results.
+2. Separate the data into input features (study hours) and output labels (pass=1, fail=0).
+3. Split the dataset into training and testing sets.
+4. Train the logistic regression model using the training data.
+5. Use the trained model to predict pass/fail on the test data.
+6. Compare predictions with actual results to calculate accuracy.
+
+## Example Output:
+
+- Predicted results for test data: `[1, 0]`  
+- Actual results for test data: `[1, 0]`  
+- Accuracy of the model: `100%`
+
+
+
