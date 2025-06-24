@@ -49,8 +49,8 @@ y_pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, y_pred)
 cm = confusion_matrix(y_test, y_pred)
 
-print("✅ Accuracy:", accuracy)
-print("📊 Confusion Matrix:\n", cm)
+print("Accuracy:", accuracy)
+print(" Confusion Matrix:\n", cm)
 
 # Step 8: Predict Genre for a New Song
 new_song = pd.DataFrame([[135, -10, 0.7]], columns=['tempo', 'loudness', 'danceability'])
